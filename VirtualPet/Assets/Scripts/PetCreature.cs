@@ -5,7 +5,7 @@ public class PetCreature : MonoBehaviour
     public int currentHungry;
     public int currentCleanliness;
     public int currentBoredom;
-    private int MaxValue = 100;
+    //private int MaxValue = 100;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,6 +23,6 @@ public class PetCreature : MonoBehaviour
     //boredom goes to half every 10 seonds
     void Update()
     {
-        Debug.Log(currentHungry / MaxValue);
+        //Debug.Log(currentHungry / MaxValue);
     }
 }
