@@ -14,15 +14,38 @@ public class PetCreature : MonoBehaviour
         currentCleanliness = 100;
         currentBoredom = 100;
     }
-
-    // Update is called once per frame
-    //currently working on bar, should decrease every second, when full it waits 3 seconds before continuing
-    //every button press makes it go up by 10
-    //maybe we could give the bears different speeds and use a switch case for that. Like hunger is every second, 3 off the bar
-    //cleanliness comes all in every 5 seconds at 15
-    //boredom goes to half every 10 seonds
+    
     void Update()
     {
         //Debug.Log(currentHungry / MaxValue);
+    }
+
+    public void SubtractCare(int tick)
+    {
+        Debug.Log(tick);
+        currentHungry -= 2;
+        switch (tick)
+        {
+            case 2: case 4:
+                currentCleanliness -= 5;
+                break;
+         
+            case 5:
+                currentBoredom -= 25;
+                break;
+        }
+    }
+
+    public int GetHunger()
+    {
+        return currentHungry;
+    }
+    public int GetCleanliness()
+    {
+        return currentCleanliness;
+    }
+    public int GetBoredom()
+    {
+        return currentBoredom;
     }
 }

@@ -12,7 +12,7 @@ public class TimeTickSystem : MonoBehaviour
     {
         tick = 0;
     }
-
+    
     private void Update()
     {
         tickTimer += Time.deltaTime;
@@ -21,8 +21,9 @@ public class TimeTickSystem : MonoBehaviour
             tickTimer -= TickTimerMax;
             tick++;
         }
-        if (tick > 8)
+        if (tick > 5 && tickTimer > 0)
         {
+            //Function: It resets tick so that it doesn't go past 10 seconds tracked
             tick = 0;
         }
     }
