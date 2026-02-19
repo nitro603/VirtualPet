@@ -572,60 +572,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb9fbe13961e0245bbd4910cc580c74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  creature: {fileID: 821621169}
+  creature: {fileID: 1356763605}
   ticker: {fileID: 766828606}
   hungerText: {fileID: 1210824702}
   cleanlinessText: {fileID: 420014809}
   boredomText: {fileID: 1598331473}
   currentTick: 0
   lastTick: 0
---- !u!1 &821621168
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 821621170}
-  - component: {fileID: 821621169}
-  m_Layer: 0
-  m_Name: CreatureFeature
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &821621169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821621168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9d4a7a37c4ecc941b9499c8c99701fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PetCreature
-  currentHungry: 0
-  currentCleanliness: 0
-  currentBoredom: 0
---- !u!4 &821621170
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821621168}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 911.66675, y: 578.5915, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1107000484
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,7 +935,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1327744296}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1356763605}
+        m_TargetAssemblyTypeName: PetCreature, Assembly-CSharp
+        m_MethodName: RecoverHungerStatus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1327744296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1033,6 +998,7 @@ GameObject:
   - component: {fileID: 1356763604}
   - component: {fileID: 1356763603}
   - component: {fileID: 1356763605}
+  - component: {fileID: 1356763606}
   m_Layer: 5
   m_Name: Creature
   m_TagString: Untagged
@@ -1049,15 +1015,15 @@ RectTransform:
   m_GameObject: {fileID: 1356763601}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2.1499, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1818232533}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.846, y: 91}
-  m_SizeDelta: {x: 900, y: 700}
+  m_AnchoredPosition: {x: 0, y: 89.889}
+  m_SizeDelta: {x: 303.5909, y: 279.7777}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1356763603
 MonoBehaviour:
@@ -1079,7 +1045,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -8644889942409211090, guid: 9b69a9bea182d544db846ef835c4e8bd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1109,9 +1075,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d4a7a37c4ecc941b9499c8c99701fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PetCreature
-  currentHungry: 0
-  currentCleanliness: 0
-  currentBoredom: 0
+--- !u!95 &1356763606
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356763601}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 54bce8057c10b2e42950f9eacc5d7005, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1463013121
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,7 +1730,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1806483276}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1356763605}
+        m_TargetAssemblyTypeName: PetCreature, Assembly-CSharp
+        m_MethodName: RecoverBoredomStatus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1806483276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1866,7 +1863,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1815746308}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1356763605}
+        m_TargetAssemblyTypeName: PetCreature, Assembly-CSharp
+        m_MethodName: RecoverCleanlinessStatus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1815746308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2070,5 +2079,4 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1986283939}
   - {fileID: 1619897525}
-  - {fileID: 821621170}
   - {fileID: 766828605}
