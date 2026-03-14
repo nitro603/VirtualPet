@@ -8,8 +8,8 @@ public class PetCreature : MonoBehaviour
     private Animator _animator;
     public Animator overlayAnimator;
     public Slider hungerBar;
-    public Slider hungerBar;
-    public Slider hungerBar;
+    public Slider cleanlinessBar;
+    public Slider boredomBar;
     
     private int _currentHungry;
     private int _currentCleanliness;
@@ -30,6 +30,14 @@ public class PetCreature : MonoBehaviour
         if (hungerBar.value != _currentHungry)
         {
             hungerBar.value = _currentHungry;
+        }
+        if (cleanlinessBar.value != _currentCleanliness)
+        {
+            cleanlinessBar.value = _currentCleanliness;
+        }
+        if (boredomBar.value != _currentBoredom)
+        {
+            boredomBar.value = _currentBoredom;
         }
         
         if (_currentHungry < 30)
@@ -68,9 +76,11 @@ public class PetCreature : MonoBehaviour
         {
             case 2: case 4:
                 _currentCleanliness -= 5;
+                cleanlinessBar.value -= 5;
                 break;
             case 5:
                 _currentBoredom -= 25;
+                boredomBar.value -= 25;
                 break;
         }
     }
@@ -97,11 +107,13 @@ public class PetCreature : MonoBehaviour
     public void RecoverCleanlinessStatus()
     {
         _currentCleanliness += 2;
+        cleanlinessBar.value += 2;
         overlayAnimator.SetTrigger("Shower");
     }
     public void RecoverBoredomStatus()
     {
         _currentBoredom += 2;
+        boredomBar.value += 2;
         overlayAnimator.SetTrigger("Brick");
     }
     
