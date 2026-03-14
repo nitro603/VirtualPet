@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: 03aa0671f91a5e847aac8d1dc38e4df0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 24642840083753557
+    second: Interactions(3)_0
+  - first:
+      213: -5321443900484969874
+    second: Interactions(3)_1
+  - first:
+      213: -1682681505509369450
+    second: Interactions(3)_2
+  - first:
+      213: 7590977796968916251
+    second: Interactions(3)_3
+  - first:
+      213: 5943413993023629008
+    second: Interactions(3)_4
+  - first:
+      213: 421945836304132661
+    second: Interactions(3)_5
+  - first:
+      213: -3195848384037921072
+    second: Interactions(3)_6
+  - first:
+      213: -6893761620734223666
+    second: Interactions(3)_7
+  - first:
+      213: 4509991884997142045
+    second: Interactions(3)_8
+  - first:
+      213: 797652321699736103
+    second: Interactions(3)_9
+  - first:
+      213: -8701030878640290852
+    second: Interactions(3)_10
+  - first:
+      213: 8482940613719097192
+    second: Interactions(3)_11
+  - first:
+      213: -1983376710974667602
+    second: Interactions(3)_12
+  - first:
+      213: -3093182556182921428
+    second: Interactions(3)_13
+  - first:
+      213: 5101882001889487501
+    second: Interactions(3)_14
+  - first:
+      213: -7966959627924051583
+    second: Interactions(3)_15
+  - first:
+      213: 536120976403414993
+    second: Interactions(3)_16
+  - first:
+      213: 5276719626992934174
+    second: Interactions(3)_17
+  - first:
+      213: 6442108834444370416
+    second: Interactions(3)_18
+  - first:
+      213: 1800705522664315504
+    second: Interactions(3)_19
+  - first:
+      213: 7542729728931607989
+    second: Interactions(3)_20
+  - first:
+      213: 7320193091630619506
+    second: Interactions(3)_21
+  - first:
+      213: 1851581409038798486
+    second: Interactions(3)_22
+  - first:
+      213: 2600722990847061014
+    second: Interactions(3)_23
+  - first:
+      213: -1244422346311745841
+    second: Interactions(3)_24
+  - first:
+      213: -2395290842999513519
+    second: Interactions(3)_25
+  - first:
+      213: -2930009328528549908
+    second: Interactions(3)_26
+  - first:
+      213: -237254389836913962
+    second: Interactions(3)_27
+  - first:
+      213: 7653253841106577191
+    second: Interactions(3)_28
+  - first:
+      213: -8227761667616212760
+    second: Interactions(3)_29
+  - first:
+      213: 6167367418863906537
+    second: Interactions(3)_30
+  - first:
+      213: 2252205356998087245
+    second: Interactions(3)_31
+  - first:
+      213: -5852887763718388032
+    second: Interactions(3)_32
+  - first:
+      213: 5564861175350678695
+    second: Interactions(3)_33
+  - first:
+      213: 9088293048983742043
+    second: Interactions(3)_34
+  - first:
+      213: 2529061960033995261
+    second: Interactions(3)_35
+  - first:
+      213: -8777418824116412790
+    second: Interactions(3)_36
+  - first:
+      213: -9003779030105760506
+    second: Interactions(3)_37
+  - first:
+      213: -6216714854044963957
+    second: Interactions(3)_38
+  - first:
+      213: -2571181612174914525
+    second: Interactions(3)_39
+  - first:
+      213: -7222239668428734078
+    second: Interactions(3)_40
+  - first:
+      213: 4323097426130928123
+    second: Interactions(3)_41
+  - first:
+      213: -811253389805347184
+    second: Interactions(3)_42
+  - first:
+      213: 2526607926038244662
+    second: Interactions(3)_43
+  - first:
+      213: -5354255580563158352
+    second: Interactions(3)_44
+  - first:
+      213: -4191727919924715226
+    second: Interactions(3)_45
+  - first:
+      213: -5214641752881391140
+    second: Interactions(3)_46
+  - first:
+      213: -7742221399523308618
+    second: Interactions(3)_47
+  - first:
+      213: -6921198166870884672
+    second: Interactions(3)_48
+  - first:
+      213: 5671807254197179587
+    second: Interactions(3)_49
+  - first:
+      213: 8679739099001535581
+    second: Interactions(3)_50
+  - first:
+      213: 4799994418969337779
+    second: Interactions(3)_51
+  - first:
+      213: 5711504191589161133
+    second: Interactions(3)_52
+  - first:
+      213: -4335080788214675776
+    second: Interactions(3)_53
+  - first:
+      213: 5369585833557541475
+    second: Interactions(3)_54
+  - first:
+      213: -8937518266271112779
+    second: Interactions(3)_55
+  - first:
+      213: -793048485065402743
+    second: Interactions(3)_56
+  - first:
+      213: 6686757439648944247
+    second: Interactions(3)_57
+  - first:
+      213: 6622036731034704750
+    second: Interactions(3)_58
+  - first:
+      213: 504209872212824502
+    second: Interactions(3)_59
+  - first:
+      213: -2100718510114190931
+    second: Interactions(3)_60
+  - first:
+      213: 1232097718144606051
+    second: Interactions(3)_61
+  - first:
+      213: -5749510201502464133
+    second: Interactions(3)_62
+  - first:
+      213: -620852970666459436
+    second: Interactions(3)_63
+  - first:
+      213: 5497682559472307305
+    second: Interactions(3)_64
+  - first:
+      213: -5324472100364408841
+    second: Interactions(3)_65
+  - first:
+      213: 931858544475399872
+    second: Interactions(3)_66
+  - first:
+      213: -707606562210839913
+    second: Interactions(3)_67
+  - first:
+      213: -7815513785623996212
+    second: Interactions(3)_68
+  - first:
+      213: 2713264735606253768
+    second: Interactions(3)_69
+  - first:
+      213: 2969203813091637262
+    second: Interactions(3)_70
+  - first:
+      213: 380483265172584183
+    second: Interactions(3)_71
+  - first:
+      213: 2605010275967886149
+    second: Interactions(3)_72
+  - first:
+      213: 3571893956435241390
+    second: Interactions(3)_73
+  - first:
+      213: -4347735978339977130
+    second: Interactions(3)_74
+  - first:
+      213: -6713566357717333994
+    second: Interactions(3)_75
+  - first:
+      213: 2375769173305077427
+    second: Interactions(3)_76
+  - first:
+      213: -2975611769909584684
+    second: Interactions(3)_77
+  - first:
+      213: -5862809693682418813
+    second: Interactions(3)_78
+  - first:
+      213: 377991045433874592
+    second: Interactions(3)_79
+  - first:
+      213: -1837306369506470612
+    second: Interactions(3)_80
+  - first:
+      213: 5297835886432969502
+    second: Interactions(3)_81
+  - first:
+      213: 6177837715675285555
+    second: Interactions(3)_82
+  - first:
+      213: -1249752499771483855
+    second: Interactions(3)_83
+  - first:
+      213: -1530065392717940675
+    second: Interactions(3)_84
+  - first:
+      213: 8604955934976050568
+    second: Interactions(3)_85
+  - first:
+      213: 1502778064983755787
+    second: Interactions(3)_86
+  - first:
+      213: -4391663916829539850
+    second: Interactions(3)_87
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Interactions(3)_0
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1280
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ae271588c875000800000000000000
+      internalID: 24642840083753557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactions(3)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a9c6b77fe6626b0800000000000000
+      internalID: -5321443900484969874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactions(3)_2
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6999ef1061ae5a8e0800000000000000
+      internalID: -1682681505509369450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactions(3)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15a53e6612985960800000000000000
+      internalID: 7590977796968916251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interactions(3)_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6624f798f3b7250800000000000000
+      internalID: 5943413993023629008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d82d2d070b111e54fb4e424d141262ac
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":640.0,"y":640.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Interactions(3)_0: 24642840083753557
+      Interactions(3)_1: -5321443900484969874
+      Interactions(3)_2: -1682681505509369450
+      Interactions(3)_3: 7590977796968916251
+      Interactions(3)_4: 5943413993023629008
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,10 +1,15 @@
 using System;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class PetCreature : MonoBehaviour
 {
     private Animator _animator;
+    public Animator overlayAnimator;
+    public Slider hungerBar;
+    public Slider hungerBar;
+    public Slider hungerBar;
     
     private int _currentHungry;
     private int _currentCleanliness;
@@ -22,6 +27,11 @@ public class PetCreature : MonoBehaviour
 
     void Update()
     {
+        if (hungerBar.value != _currentHungry)
+        {
+            hungerBar.value = _currentHungry;
+        }
+        
         if (_currentHungry < 30)
         {
             _animator.SetBool("isHungry",true);
@@ -53,6 +63,7 @@ public class PetCreature : MonoBehaviour
     {
         Debug.Log(tick);
         _currentHungry -= 2;
+        hungerBar.value -= 2;
         switch (tick)
         {
             case 2: case 4:
@@ -80,14 +91,18 @@ public class PetCreature : MonoBehaviour
     public void RecoverHungerStatus()
     {
         _currentHungry += 2;
+        hungerBar.value += 2;
+        _animator.SetTrigger("Feed");
     }
     public void RecoverCleanlinessStatus()
     {
         _currentCleanliness += 2;
+        overlayAnimator.SetTrigger("Shower");
     }
     public void RecoverBoredomStatus()
     {
         _currentBoredom += 2;
+        overlayAnimator.SetTrigger("Brick");
     }
     
 }
