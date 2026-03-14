@@ -19,9 +19,9 @@ public class GameManager : MonoBehaviour
     {
         currentTick = ticker.TickCheck();
         lastTick = currentTick;
-        hungerText.text = "Hunger: 100/100";
-        cleanlinessText.text = "Cleanliness: 100/100";
-        boredomText.text = "Boredom: 100/100";
+        hungerText.text = "100";
+        cleanlinessText.text = "100";
+        boredomText.text = "100";
     }
 
     private void Update()
@@ -33,8 +33,8 @@ public class GameManager : MonoBehaviour
         }
         lastTick = currentTick;
 
-        hungerText.text = "Hunger:" + creature.GetHunger() + "/100";
-        cleanlinessText.text = "Cleanliness:" + creature.GetCleanliness() + "/100";
-        boredomText.text = "Boredom:" + creature.GetBoredom() + "/100";
+        hungerText.text = creature.GetHunger().ToString();
+        cleanlinessText.text = creature.GetCleanliness().ToString();
+        boredomText.text = creature.GetBoredom().ToString();
     }
 }
