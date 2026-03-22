@@ -10,6 +10,9 @@ public class PetCreature : MonoBehaviour
     public Slider hungerBar;
     public Slider cleanlinessBar;
     public Slider boredomBar;
+    public AudioSource crunchSfx;
+    public GameObject creaturePanel;
+    public GameObject lossScreen;
     
     private int _currentHungry;
     private int _currentCleanliness;
@@ -70,17 +73,20 @@ public class PetCreature : MonoBehaviour
     public void SubtractCare(int tick)
     {
         Debug.Log(tick);
-        _currentHungry -= 2;
-        hungerBar.value -= 2;
+        _currentHungry -= 8;
+        hungerBar.value -= 8;
+        IsDead();
         switch (tick)
         {
             case 2: case 4:
-                _currentCleanliness -= 5;
-                cleanlinessBar.value -= 5;
+                _currentCleanliness -= 16;
+                cleanlinessBar.value -= 16;
+                IsDead();
                 break;
             case 5:
-                _currentBoredom -= 25;
-                boredomBar.value -= 25;
+                _currentBoredom -= 42;
+                boredomBar.value -= 42;
+                IsDead();
                 break;
         }
     }
@@ -116,5 +122,19 @@ public class PetCreature : MonoBehaviour
         boredomBar.value += 2;
         overlayAnimator.SetTrigger("Brick");
     }
-    
+
+    private void IsDead()
+    {
+        Debug.Log(_currentHungry + " " + _currentCleanliness + " " + _currentBoredom + "");
+        if (_currentHungry < 96 && _currentCleanliness < 96 || _currentBoredom < 90)
+        {
+            creaturePanel.SetActive(false);
+            lossScreen.SetActive(true);
+
+        }
+    }
+    public void PlayCrunchSfx()
+    {
+        crunchSfx.Play();
+    }
 }

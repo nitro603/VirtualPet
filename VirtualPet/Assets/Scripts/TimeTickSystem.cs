@@ -3,33 +3,29 @@ using UnityEngine;
 
 public class TimeTickSystem : MonoBehaviour
 {
-    private const float TickTimerMax = 2f;
+    private const float TickTimerMax = 1f;
     
-    private int tick;
-    private float tickTimer;
-
+    private int _tick;
+    private float _tickTimer;
+    
     private void Awake()
     {
-        tick = 0;
+        _tick = 0;
     }
     
     private void Update()
     {
-        tickTimer += Time.deltaTime;
-        if (tickTimer >= TickTimerMax)
+        //this will keep counting till the END OF TIME
+        _tickTimer += Time.deltaTime;
+        if (_tickTimer >= TickTimerMax)
         {
-            tickTimer -= TickTimerMax;
-            tick++;
-        }
-        if (tick > 5 && tickTimer > 0)
-        {
-            //Function: It resets tick so that it doesn't go past 10 seconds tracked
-            tick = 0;
+            _tickTimer -= TickTimerMax;
+            _tick++;
         }
     }
 
     public int TickCheck()
     {
-        return tick;
+        return _tick;
     }
 }

@@ -10,10 +10,14 @@ public class GameManager : MonoBehaviour
     public TMP_Text hungerText;
     public TMP_Text cleanlinessText;
     public TMP_Text boredomText;
+    public GameObject winScreen;
+    public GameObject creaturePanel;
     
     public int currentTick;
     public int lastTick;
-    //get tick object and get tick 
+
+    private int _finalTimer = 0;
+//get tick object and get tick 
 
     private void Start()
     {
@@ -29,6 +33,12 @@ public class GameManager : MonoBehaviour
         currentTick = ticker.TickCheck();
         if (currentTick != lastTick)
         {
+            _finalTimer += 1;
+            if (_finalTimer == 6)
+            {
+                Destroy(creaturePanel);
+                winScreen.SetActive(true);
+            }
             creature.SubtractCare(currentTick);
         }
         lastTick = currentTick;
@@ -37,4 +47,7 @@ public class GameManager : MonoBehaviour
         cleanlinessText.text = creature.GetCleanliness().ToString();
         boredomText.text = creature.GetBoredom().ToString();
     }
+    
+    
+    
 }
