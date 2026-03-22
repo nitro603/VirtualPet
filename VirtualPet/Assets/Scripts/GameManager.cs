@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
         if (currentTick != lastTick)
         {
             _finalTimer += 1;
-            if (_finalTimer == 6)
+            if (_finalTimer == 45)
             {
                 Destroy(creaturePanel);
                 winScreen.SetActive(true);

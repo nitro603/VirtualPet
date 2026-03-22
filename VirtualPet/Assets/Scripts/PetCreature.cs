@@ -70,26 +70,28 @@ public class PetCreature : MonoBehaviour
         }
     }
 
+    private void UpdateStat(ref int stat, Slider bar, int amount)
+    {
+        stat -= amount;
+        bar.value -= amount;
+    }
+    
     public void SubtractCare(int tick)
     {
-        Debug.Log(tick);
-        _currentHungry -= 8;
-        hungerBar.value -= 8;
-        IsDead();
-        switch (tick)
+        UpdateStat(ref _currentHungry, hungerBar, 2);
+
+        if (tick % 4 == 0)
         {
-            case 2: case 4:
-                _currentCleanliness -= 16;
-                cleanlinessBar.value -= 16;
-                IsDead();
-                break;
-            case 5:
-                _currentBoredom -= 42;
-                boredomBar.value -= 42;
-                IsDead();
-                break;
+            UpdateStat(ref _currentCleanliness, cleanlinessBar, 16);
+        }
+
+        if (tick % 8 == 0)
+        {
+            UpdateStat(ref _currentBoredom, boredomBar,42);
         }
     }
+
+    
 
     public int GetHunger()
     {
@@ -126,7 +128,7 @@ public class PetCreature : MonoBehaviour
     private void IsDead()
     {
         Debug.Log(_currentHungry + " " + _currentCleanliness + " " + _currentBoredom + "");
-        if (_currentHungry < 96 && _currentCleanliness < 96 || _currentBoredom < 90)
+        if (_currentHungry < 0 && _currentCleanliness < 0 || _currentBoredom < 0)
         {
             creaturePanel.SetActive(false);
             lossScreen.SetActive(true);
