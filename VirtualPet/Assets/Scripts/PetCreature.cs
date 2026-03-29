@@ -17,7 +17,6 @@ public class PetCreature : MonoBehaviour
     private int _currentHungry;
     private int _currentCleanliness;
     private int _currentBoredom;
-    
 
     void Start()
     {
@@ -76,10 +75,14 @@ public class PetCreature : MonoBehaviour
         bar.value -= amount;
     }
     
+    
     public void SubtractCare(int tick)
     {
+        //checking if we're currently 0-15, 15-35, or above
+        int paceState = tick < 15 ? 0 : tick > 15 & tick < 35 ? 1 : 2;
+        //int hungerRate = paceState == 0 ? 4 : paceState;
+        
         UpdateStat(ref _currentHungry, hungerBar, 2);
-
         if (tick % 4 == 0)
         {
             UpdateStat(ref _currentCleanliness, cleanlinessBar, 16);
@@ -90,7 +93,6 @@ public class PetCreature : MonoBehaviour
             UpdateStat(ref _currentBoredom, boredomBar,42);
         }
     }
-
     
 
     public int GetHunger()
