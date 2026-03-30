@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Serialization;
 
 public class GameManager : MonoBehaviour
@@ -10,17 +11,21 @@ public class GameManager : MonoBehaviour
     public TMP_Text hungerText;
     public TMP_Text cleanlinessText;
     public TMP_Text boredomText;
-    public GameObject winScreen;
+    public Text timerText;
     public GameObject creaturePanel;
+    public GameObject winScreen;
+    public GameObject lossScreen;
+    private bool _isDead;
     
     public int currentTick;
     public int lastTick;
 
     private int _finalTimer = 0;
-//get tick object and get tick 
+    //get tick object and get tick 
 
     private void Start()
     {
+        _isDead = false;
         currentTick = ticker.TickCheck();
         lastTick = currentTick;
         hungerText.text = "100";
@@ -34,20 +39,37 @@ public class GameManager : MonoBehaviour
         if (currentTick != lastTick)
         {
             _finalTimer += 1;
-            if (_finalTimer == 45)
-            {
-                Destroy(creaturePanel);
-                winScreen.SetActive(true);
-            }
+            timerText.text = currentTick < 10 ? "0" + currentTick : "" + currentTick;
+            
+            _checkIfOver();
             creature.SubtractCare(currentTick);
         }
         lastTick = currentTick;
-
+        
+        if (creature.GetHunger() < 0 && creature.GetCleanliness() < 0 || creature.GetBoredom() < 0)
+        { 
+            KillCreature();
+        }
         hungerText.text = creature.GetHunger().ToString();
         cleanlinessText.text = creature.GetCleanliness().ToString();
         boredomText.text = creature.GetBoredom().ToString();
     }
-    
-    
+
+    public void KillCreature()
+    {
+        _isDead = true;
+        creaturePanel.SetActive(false);
+        lossScreen.SetActive(true);
+    }
+
+    private void _checkIfOver()
+    {
+        if (_finalTimer == 45 && !_isDead)
+        {
+            creature.SetOver();
+            creaturePanel.SetActive(false);
+            winScreen.SetActive(true);
+        }
+    }
     
 }
