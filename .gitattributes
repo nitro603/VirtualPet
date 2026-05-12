@@ -1,0 +1,10 @@
+# Mark specific folders as generated so they don't count toward language stats
+Assets/TextMesh\ Pro/**/* linguist-generated
+Assets/Plugins/**/* linguist-generated
+
+# If you have a specific folder for shaders you want to hide
+Assets/Shaders/**/* linguist-generated
+
+# Or ignore all files of a specific extension
+*.shader linguist-generated
+*.compute linguist-generated
