@@ -8,3 +8,10 @@ Assets/Shaders/**/* linguist-generated
 # Or ignore all files of a specific extension
 *.shader linguist-generated
 *.compute linguist-generated
+
+# Mark HLSL files as generated to hide them from the language bar
+*.hlsl linguist-generated
+*.hlsli linguist-generated
+
+# If you use CGInclude files (common in older Unity shaders)
+*.cginc linguist-generated
